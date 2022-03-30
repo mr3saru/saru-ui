@@ -68,6 +68,10 @@ export default App;
 ├── global
 |   ├── index.ts
 |   ├── styles.ts
+/stories
+├── packages
+|   ├── button
+|   |   └── stories.tsx
 ```
 
 ## License

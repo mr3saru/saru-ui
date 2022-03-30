@@ -9,10 +9,12 @@ export default () => (
         --positive: #73c6fa;
         --base: #263640;
 
-        --gray: #444444;
-
-        --white: #ffffff;
         --black: #000000;
+        --dark: #444444;
+        --gray: #b0a5a5;
+        --light: #dddddd;
+        --lighter: #fafafa;
+        --white: #ffffff;
 
         --max-width: 120rem;
 
