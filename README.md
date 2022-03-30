@@ -22,15 +22,15 @@ Here is a quick example to get you started, **it's all you need**:
 
 ```js
 import React from 'react';
-import { Primary, GlobalStyles } from 'saru-ui/lib';
+import { Button, GlobalStyles } from 'saru-ui/lib';
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <Primary>
+      <Button>
         OK
-      </Primary>
+      </Button>
     </>
   );
 }

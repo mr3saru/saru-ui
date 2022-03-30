@@ -1,6 +1,6 @@
 {
   "name": "saru-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It's a simple and faster React UI",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
     "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook"
   },
-  "keywords": [],
+  "keywords": ["react", "ui", "saru"],
   "author": "vczb",
   "email": "viniciuszucatti@gmail.com",
   "license": "MIT",

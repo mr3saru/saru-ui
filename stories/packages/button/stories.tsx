@@ -1,7 +1,7 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
-import PrimaryButton from './Primary'
-import GhostButton from './Ghost'
+
+import { Button, GhostButton } from './../../../src'
 
 export default {
   title: 'button',
@@ -11,10 +11,12 @@ export default {
   }
 } as Meta
 
-export const Primary: Story = (args) => (
-  <PrimaryButton {...args}>{args.children}</PrimaryButton>
+export const Default: Story = (args) => (
+  <div style={{ maxWidth: '50rem' }}>
+    <Button {...args}>{args.children}</Button>
+  </div>
 )
-Primary.argTypes = {
+Default.argTypes = {
   variant: {
     control: {
       type: 'select',
@@ -24,5 +26,7 @@ Primary.argTypes = {
 }
 
 export const Ghost: Story = (args) => (
-  <GhostButton {...args}>{args.children}</GhostButton>
+  <div style={{ maxWidth: '50rem' }}>
+    <GhostButton {...args}>{args.children}</GhostButton>
+  </div>
 )

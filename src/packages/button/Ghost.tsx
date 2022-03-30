@@ -1,7 +1,7 @@
 import React from 'react'
 import { ButtonTypes } from 'types/button'
 
-const Ghost = ({ children, ...props }: Omit<ButtonTypes, 'variant'>) => {
+const ButtonGhost = ({ children, ...props }: Omit<ButtonTypes, 'variant'>) => {
   return (
     <button {...props} disabled={props?.disabled || false}>
       <style jsx>{`
@@ -11,6 +11,7 @@ const Ghost = ({ children, ...props }: Omit<ButtonTypes, 'variant'>) => {
           background: transparent;
           width: fit-content;
           height: fit-content;
+          transition: var(--transition-default);
         }
 
         button:disabled {
@@ -25,4 +26,4 @@ const Ghost = ({ children, ...props }: Omit<ButtonTypes, 'variant'>) => {
   )
 }
 
-export default Ghost
+export default ButtonGhost

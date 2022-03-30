@@ -16,6 +16,8 @@ export default () => (
 
         --max-width: 120rem;
 
+        --font-family: 'Inter';
+
         --font-xxsmall: 0.4rem;
         --font-xsmall: 0.8rem;
         --font-small: 1.2rem;
@@ -59,9 +61,17 @@ export default () => (
       }
 
       * {
-        font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Segoe UI,
-          Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        font-family: var(--font-family), -apple-system, BlinkMacSystemFont,
+          Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
           Helvetica Neue, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
@@ -75,31 +85,13 @@ export default () => (
         text-decoration: none;
       }
 
-      p {
-        font-size: var(--font-xlarge);
-        font-weight: var(--font-light);
-        color: var(--gray);
-      }
-
       b {
         font-weight: var(--font-bold);
-      }
-
-      p b a {
-        color: var(--primary);
       }
 
       ul,
       li {
         list-style: none;
-      }
-
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
       }
     `}</style>
   </div>

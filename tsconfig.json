@@ -73,8 +73,5 @@
     }]
   },
   "types": ["src/types/**/*.d.ts"],
-  "include": ["src"],
-  "exclude": [
-    "src/packages/**/*stories*.*"
-  ]
+  "include": ["src"]
 }

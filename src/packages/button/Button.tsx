@@ -1,7 +1,7 @@
 import React from 'react'
 import { ButtonTypes } from 'types/button'
 
-const Primary = ({ variant = 'action', children, ...props }: ButtonTypes) => {
+const Button = ({ variant = 'action', children, ...props }: ButtonTypes) => {
   return (
     <button {...props} disabled={props?.disabled || false}>
       <style jsx>{`
@@ -15,8 +15,14 @@ const Primary = ({ variant = 'action', children, ...props }: ButtonTypes) => {
           display: block;
           margin: 0 auto;
           font-weight: var(--font-bold);
+          transition: var(--transition-default);
         }
-
+        button:hover {
+          filter: brightness(1.2);
+        }
+        button:active {
+          filter: brightness(0.9);
+        }
         button:disabled {
           cursor: not-allowed;
         }
@@ -29,4 +35,4 @@ const Primary = ({ variant = 'action', children, ...props }: ButtonTypes) => {
   )
 }
 
-export default Primary
+export default Button
