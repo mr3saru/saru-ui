@@ -14,6 +14,14 @@ export default {
 export const Primary: Story = (args) => (
   <PrimaryButton {...args}>{args.children}</PrimaryButton>
 )
+Primary.argTypes = {
+  variant: {
+    control: {
+      type: 'select',
+      options: ['action', 'positive', 'base']
+    }
+  }
+}
 
 export const Ghost: Story = (args) => (
   <GhostButton {...args}>{args.children}</GhostButton>

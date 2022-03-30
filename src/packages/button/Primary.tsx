@@ -1,14 +1,14 @@
 import React from 'react'
 import { ButtonTypes } from 'types/button'
 
-const Primary = ({ children, ...props }: ButtonTypes) => {
+const Primary = ({ variant = 'action', children, ...props }: ButtonTypes) => {
   return (
     <button {...props} disabled={props?.disabled || false}>
       <style jsx>{`
         button {
           border: none;
           cursor: pointer;
-          background: var(--primary);
+          background: var(--${variant});
           color: var(--white);
           width: 100%;
           height: 4rem;

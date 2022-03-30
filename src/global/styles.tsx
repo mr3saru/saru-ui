@@ -4,51 +4,49 @@ import React from 'react'
 export default () => (
   <div>
     <style jsx global>{`
-    :root {
-      --primary: #e45876;
-      --secondary: #263640;
-      --gray: #444444;
-      --medium-gray: #ddd;
-      --light-gray: #b0a5a5;
-      --lighter: #eae6ff;
-      --lighter-blue: #aae3f6;
-      --white: #ffffff;
-      --black: #000000;
-      --light: #73c6fa;
+      :root {
+        --action: #e45876;
+        --positive: #73c6fa;
+        --base: #263640;
 
-      --max-width: 120rem;
+        --gray: #444444;
 
-      --font-xxsmall: 0.4rem;
-      --font-xsmall: 0.8rem;
-      --font-small: 1.2rem;
-      --font-medium: 1.6rem;
-      --font-large: 2rem;
-      --font-xlarge: 2.4rem;
-      --font-xxlarge: 2.8rem;
+        --white: #ffffff;
+        --black: #000000;
 
-      --font-light: 300;
-      --font-normal: 400;
-      --font-bold: 500;
+        --max-width: 120rem;
 
-      --spacing-mini: 0.2rem;
-      --spacing-small: 0.4rem;
-      --spacing-compact: 0.8rem;
-      --spacing-medium: 1.6rem;
-      --spacing-large: 3.2rem;
-      --spacing-huge: 6.4rem;
-      --spacing-giant: 12.8rem;
+        --font-xxsmall: 0.4rem;
+        --font-xsmall: 0.8rem;
+        --font-small: 1.2rem;
+        --font-medium: 1.6rem;
+        --font-large: 2rem;
+        --font-xlarge: 2.4rem;
+        --font-xxlarge: 2.8rem;
 
-      --layer-base: 10;
-      --layer-layout: 15;
-      --layer-menu: 20;
-      --layer-overlay: 30;
-      --layer-modal: 40;
+        --font-light: 300;
+        --font-normal: 400;
+        --font-bold: 500;
 
-      --transition-default: 0.3s ease-in-out;
-      --transition-fast: 0.1s ease-in-out;
+        --spacing-mini: 0.2rem;
+        --spacing-small: 0.4rem;
+        --spacing-compact: 0.8rem;
+        --spacing-medium: 1.6rem;
+        --spacing-large: 3.2rem;
+        --spacing-huge: 6.4rem;
+        --spacing-giant: 12.8rem;
 
-      --shadow-basic: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+        --layer-base: 10;
+        --layer-layout: 15;
+        --layer-menu: 20;
+        --layer-overlay: 30;
+        --layer-modal: 40;
+
+        --transition-default: 0.3s ease-in-out;
+        --transition-fast: 0.1s ease-in-out;
+
+        --shadow-basic: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
 
       html {
         scroll-behavior: smooth;

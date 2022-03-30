@@ -1,7 +1,7 @@
 import React from 'react'
 import { ButtonTypes } from 'types/button'
 
-const Ghost = ({ children, ...props }: ButtonTypes) => {
+const Ghost = ({ children, ...props }: Omit<ButtonTypes, 'variant'>) => {
   return (
     <button {...props} disabled={props?.disabled || false}>
       <style jsx>{`
