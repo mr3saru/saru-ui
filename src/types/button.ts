@@ -4,4 +4,5 @@ type HTMLButtonTypes = ButtonHTMLAttributes<HTMLButtonElement>
 
 export type ButtonTypes = {
   children?: ReactNode | string | null
+  disabled?: boolean
 } & HTMLButtonTypes

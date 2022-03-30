@@ -1,15 +1,20 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
-import Primary from './Primary'
+import PrimaryButton from './Primary'
+import GhostButton from './Ghost'
 
 export default {
-  title: 'Primary',
-  component: Primary,
+  title: 'button',
   args: {
-    children: 'My Primary'
+    children: 'Hello',
+    disabled: false
   }
 } as Meta
 
-export const Default: Story = (args) => (
-  <Primary {...args}>{args.children}</Primary>
+export const Primary: Story = (args) => (
+  <PrimaryButton {...args}>{args.children}</PrimaryButton>
+)
+
+export const Ghost: Story = (args) => (
+  <GhostButton {...args}>{args.children}</GhostButton>
 )

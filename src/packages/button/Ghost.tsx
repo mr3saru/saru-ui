@@ -1,12 +1,7 @@
-import React, { ButtonHTMLAttributes, ReactNode } from 'react'
+import React from 'react'
+import { ButtonTypes } from 'types/button'
 
-type ButtonTypes = ButtonHTMLAttributes<HTMLButtonElement>
-
-type GhostProps = {
-  children?: ReactNode | string | null
-} & ButtonTypes
-
-const Ghost = ({ children, ...props }: GhostProps) => {
+const Ghost = ({ children, ...props }: ButtonTypes) => {
   return (
     <button {...props} disabled={props?.disabled || false}>
       <style jsx>{`
