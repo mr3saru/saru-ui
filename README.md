@@ -1,7 +1,42 @@
-# SARU-UI
+# [SARU-UI](https://mr3saru.github.io/saru-ui)
 
 It's a simple and faster React UI
 
+## Installation
+
+saru-ui is available as an [npm package](https://www.npmjs.com/package/saru-ui).
+
+To install it, run:
+
+```bash
+  //with npm
+  npm install saru-ui
+
+  //with yarn
+  yarn add saru-ui
+```
+
+## Usage
+
+Here is a quick example to get you started, **it's all you need**:
+
+```js
+import React from 'react';
+import { Primary, GlobalStyles } from 'saru-ui/lib';
+
+function App() {
+  return (
+    <>
+      <GlobalStyles />
+      <Primary>
+        OK
+      </Primary>
+    </>
+  );
+}
+
+export default App;
+```
 ## What is inside?
 
 - [ReactJS](https://reactjs.org/)
@@ -15,7 +50,7 @@ It's a simple and faster React UI
 
 - `build`: build the files in the `lib` directory
 - `storybook`: run the storybook at the address `localhost:6006`
-- `deploy-storybook`: deploy the storybook to the address `https://mr3saru.github.io/saru-ui`
+- `deploy-storybook`: deploy the storybook to the address [`https://mr3saru.github.io/saru-ui`](https://mr3saru.github.io/saru-ui)
 - `prettier:check`: check formatting on all `src` directory
 - `prettier:format`: formats all `src` directory
 
@@ -30,9 +65,9 @@ It's a simple and faster React UI
 |   ├── index.ts
 |   ├── button
 |   |   └── ...
-├── styles
-|   ├── global.ts
-|   ├── theme.ts
+├── global
+|   ├── index.ts
+|   ├── styles.ts
 ```
 
 ## License
