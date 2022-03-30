@@ -15,6 +15,7 @@ It's a simple and faster React UI
 
 - `build`: build the files in the `lib` directory
 - `storybook`: run the storybook at the address `localhost:6006`
+- `deploy-storybook`: deploy the storybook to the address `https://mr3saru.github.io/saru-ui`
 - `prettier:check`: check formatting on all `src` directory
 - `prettier:format`: formats all `src` directory
 
@@ -27,12 +28,13 @@ It's a simple and faster React UI
 ├── index.ts
 ├── packages
 |   ├── index.ts
-|   ├── Button
-|   |   ├── index.tsx
-|   |   ├── stories.tsx
-|   |   └── styles.ts
+|   ├── button
+|   |   └── ...
 ├── styles
 |   ├── global.ts
 |   ├── theme.ts
 ```
 
+## License
+
+This project is licensed under the [MIT](./LICENSE) License.

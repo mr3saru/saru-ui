@@ -8,6 +8,7 @@
   },
   "main": "lib/index.js",
   "types": "lib",
+  "homepage": "http://mr3saru.github.io/saru-ui",
   "scripts": {
     "build": "tsc -p .",
     "lint": "eslint src --max-warnings=0",
@@ -15,6 +16,8 @@
     "prettier:format": "prettier --write \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
     "prettier:check": "prettier -c \"src/**/*.{ts,tsx,js,jsx,json,md}\"",
     "storybook": "start-storybook -p 6006",
+    "predeploy-storybook": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static",
     "build-storybook": "build-storybook"
   },
   "keywords": [],
@@ -40,6 +43,7 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
