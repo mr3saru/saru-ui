@@ -1,12 +1,14 @@
 import React from 'react'
 import { Story, Meta } from '@storybook/react'
 
-import { TextBox as FieldTextBox } from './../../../src'
+import {
+  TextBox as FieldTextBox,
+  TextArea as FieldTextArea
+} from './../../../src'
 
 export default {
   title: 'field',
   args: {
-    placeholder: 'Name',
     disabled: false
   },
   argTypes: {
@@ -24,3 +26,17 @@ export const TextBox: Story = (args) => (
     <FieldTextBox {...args} />
   </div>
 )
+
+TextBox.args = {
+  placeholder: 'Name'
+}
+
+export const TextArea: Story = (args) => (
+  <div style={{ maxWidth: '50rem' }}>
+    <FieldTextArea {...args} />
+  </div>
+)
+
+TextArea.args = {
+  placeholder: 'Description'
+}

@@ -1,8 +1,14 @@
-import { InputHTMLAttributes } from 'react'
+import { InputHTMLAttributes, TextareaHTMLAttributes } from 'react'
 
-type InputTypes = InputHTMLAttributes<HTMLInputElement>
+type InputElementTypes = InputHTMLAttributes<HTMLInputElement>
 
-export type TextBoxTypes = {
-  fontSize?: 'small' | 'medium' | 'large'
+export type CommomTypes = {
+  fontSize: 'small' | 'medium' | 'large'
   disabled?: boolean
-} & InputTypes
+}
+
+export type TextBoxTypes = CommomTypes & InputElementTypes
+
+type TextAreaElementTypes = TextareaHTMLAttributes<HTMLTextAreaElement>
+
+export type TextAreaTypes = CommomTypes & TextAreaElementTypes
