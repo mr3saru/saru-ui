@@ -5,12 +5,12 @@ import { HeadingTypes } from 'types/typo'
 const Heading = ({
   children,
   color = 'black',
-  level = 'h1',
+  htmlTag = 'h1',
   fontSize = 'large',
   weight = 'normal',
   ...props
 }: HeadingTypes) => {
-  const Heading = useMemo(() => level, [level])
+  const Heading = useMemo(() => htmlTag, [htmlTag])
 
   return (
     <Heading {...props} className="heading">
