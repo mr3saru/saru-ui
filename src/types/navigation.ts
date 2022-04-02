@@ -1,9 +1,7 @@
 import { HTMLAttributes } from 'react'
-import { Children, ColorVariant } from './common'
+import { Children, ColorOptions } from './common'
 
 type HTMLAnchorElementTypes = HTMLAttributes<HTMLAnchorElement>
-
-type ColorOptions = 'black' | 'white' | ColorVariant
 
 export type LinkTypes = {
   children: Children

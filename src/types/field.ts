@@ -1,9 +1,10 @@
 import { InputHTMLAttributes, TextareaHTMLAttributes } from 'react'
+import { fontSizeOptions } from './common'
 
 type InputElementTypes = InputHTMLAttributes<HTMLInputElement>
 
 export type CommomTypes = {
-  fontSize: 'small' | 'medium' | 'large'
+  fontSize: fontSizeOptions
   disabled?: boolean
 }
 

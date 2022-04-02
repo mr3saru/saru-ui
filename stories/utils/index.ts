@@ -1,1 +1,1 @@
-export { variantOptions } from './options'
+export { variantOptions, fontSizeOptions } from './options'

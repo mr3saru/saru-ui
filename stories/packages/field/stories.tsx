@@ -6,6 +6,8 @@ import {
   TextArea as FieldTextArea
 } from './../../../src'
 
+import { fontSizeOptions } from '../../utils'
+
 export default {
   title: 'field',
   args: {
@@ -15,7 +17,7 @@ export default {
     fontSize: {
       control: {
         type: 'select',
-        options: ['small', 'medium', 'large']
+        options: fontSizeOptions
       }
     }
   }
