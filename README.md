@@ -50,7 +50,7 @@ export default App;
 
 - `build`: build the files in the `lib` directory
 - `storybook`: run the storybook at the address `localhost:6006`
-- `deploy-storybook`: deploy the storybook to the address [`https://mr3saru.github.io/saru-ui`](https://mr3saru.github.io/saru-ui)
+- `deploy-storybook`: deploy the storybook to the branch `gh-pages`
 - `prettier:check`: check formatting on all `src` directory
 - `prettier:format`: formats all `src` directory
 
@@ -72,6 +72,7 @@ export default App;
 ├── packages
 |   ├── button
 |   |   └── stories.tsx
+├── utils
 ```
 
 ## License

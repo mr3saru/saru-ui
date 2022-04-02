@@ -1,0 +1,1 @@
+export { variantOptions } from './options'

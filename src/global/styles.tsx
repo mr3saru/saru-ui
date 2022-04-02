@@ -83,6 +83,7 @@ export default () => (
       }
 
       a {
+        cursor: pointer;
         color: inherit;
         text-decoration: none;
       }

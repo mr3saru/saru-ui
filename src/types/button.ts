@@ -1,9 +1,10 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react'
+import { ButtonHTMLAttributes } from 'react'
+import { Children, ColorVariant } from './common'
 
-type HTMLButtonTypes = ButtonHTMLAttributes<HTMLButtonElement>
+type HTMLButtonElementTypes = ButtonHTMLAttributes<HTMLButtonElement>
 
 export type ButtonTypes = {
-  variant?: 'action' | 'positive' | 'base'
-  children?: ReactNode | string | null
+  variant?: ColorVariant
+  children?: Children
   disabled?: boolean
-} & HTMLButtonTypes
+} & HTMLButtonElementTypes

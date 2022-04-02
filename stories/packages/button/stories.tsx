@@ -3,6 +3,8 @@ import { Story, Meta } from '@storybook/react'
 
 import { Button, GhostButton } from './../../../src'
 
+import { variantOptions } from '../../utils'
+
 export default {
   title: 'button',
   args: {
@@ -20,7 +22,7 @@ Default.argTypes = {
   variant: {
     control: {
       type: 'select',
-      options: ['action', 'positive', 'base']
+      options: variantOptions
     }
   }
 }
