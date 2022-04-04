@@ -1,11 +1,31 @@
 import React from 'react'
 import { TextAreaTypes } from 'types/field'
-import { commonStyles } from './styles'
 
 const TextArea = ({ value, fontSize = 'medium', ...props }: TextAreaTypes) => {
   return (
     <>
-      <style jsx>{commonStyles({ fontSize })}</style>
+      <style jsx>{`
+        textarea {
+          display: block;
+          padding: var(--spacing-compact);
+          border: 1px solid var(--light);
+          color: var(--black);
+          font-size: var(--font-${fontSize});
+        }
+
+        textarea {
+          height: fit-content;
+          width: 100%;
+        }
+
+        textarea:disabled {
+          background: var(--lighter);
+          color: var(--gray);
+        }
+        ::placeholder {
+          color: var(--gray);
+        }
+      `}</style>
       <textarea {...props} disabled={props?.disabled || false} value={value} />
     </>
   )

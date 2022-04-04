@@ -68,10 +68,6 @@
     /* Advanced Options */
     "skipLibCheck": true,                           /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true,        /* Disallow inconsistently-cased references to the same file. */
-    "plugins": [{
-      "styled-jsx/babel": { "optimizeForSpeed": true }
-    }]
   },
-  "types": ["src/types/**/*.d.ts"],
   "include": ["src"]
 }
