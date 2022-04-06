@@ -20,7 +20,7 @@ const TextBox = ({ value, fontSize = 'medium', ...props }: TextBoxTypes) => {
           background: var(--lighter);
           color: var(--gray);
         }
-        ::placeholder {
+        input::placeholder {
           color: var(--gray);
         }
       `}</style>

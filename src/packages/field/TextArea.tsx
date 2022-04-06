@@ -22,7 +22,7 @@ const TextArea = ({ value, fontSize = 'medium', ...props }: TextAreaTypes) => {
           background: var(--lighter);
           color: var(--gray);
         }
-        ::placeholder {
+        textarea::placeholder {
           color: var(--gray);
         }
       `}</style>
