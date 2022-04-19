@@ -13,10 +13,15 @@ const Heading = ({
   const Heading = useMemo(() => htmlTag, [htmlTag])
 
   return (
-    <Heading {...props} className="heading">
+    <Heading {...props}>
       <style jsx>
         {`
-          .heading {
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
             color: var(--${color});
             font-size: var(--font-${fontSize});
             font-weight: var(--font-${weight});

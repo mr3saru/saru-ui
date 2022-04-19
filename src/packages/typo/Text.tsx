@@ -11,9 +11,11 @@ const Text = ({
   const Element = useMemo(() => htmlTag, [htmlTag])
 
   return (
-    <Element className="text">
+    <Element>
       <style jsx>{`
-        .text {
+        p,
+        span,
+        div {
           color: var(--${color});
           font-weight: var(--font-${weight});
           font-size: var(--font-${fontSize});
