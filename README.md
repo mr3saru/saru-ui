@@ -53,6 +53,9 @@ export default App;
 - `deploy-storybook`: deploy the storybook to the branch `gh-pages`
 - `prettier:check`: check formatting on all `src` directory
 - `prettier:format`: formats all `src` directory
+- `release`: generate a release
+- `build:dev`: rollup build for development
+- `build:prod`: rollup build for production
 
 ## Project structure
 
